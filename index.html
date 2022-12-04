@@ -5,8 +5,55 @@
     <link rel="icon" type="image/svg+xml" href="/smiley-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GRUnitech WebDev Exam - OS KULYOK</title>
+    <link rel="stylesheet" href="./src/style.scss" />
   </head>
   <body>
+    <h1>Currency Converter</h1>
+
+    <section class="currency-converter-form">
+      <form id="currency-converter-form" action="">
+        <label for="currency">Currency:</label>
+        <select id="currency">
+          <option value="USD">USD (United States Dollar)</option>
+          <option value="EUR">EUR</option>
+          <option value="GPY">GPY</option>
+        </select>
+        <label for="start">Exchange Date:</label>
+        <input type="date" id="start" name="trip-start" value="2021-10-01" />
+        <button type="submit">Submit</button>
+        <div class="result">
+          Exchange Rate to ILS:
+          <span id="exchangeResult">3.452</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="currency-converter-table">
+      <table>
+        <thead>
+          <tr>
+            <th>date</th>
+            <th>currency</th>
+            <th>exchange rate</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>12-01-2022</td>
+          <td>USD</td>
+          <td>3.1548</td>
+        </tr>
+        <tr>
+          <td>01-02-2021</td>
+          <td>EUR</td>
+          <td>3.276</td>
+        </tr>
+        <tr>
+          <td>25-02-2020</td>
+          <td>GPY</td>
+          <td>3.1548</td>
+        </tr>
+      </table>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
